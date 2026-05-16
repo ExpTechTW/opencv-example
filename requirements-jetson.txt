@@ -1,0 +1,11 @@
+# Jetson Orin / Xavier (aarch64) 用
+#
+# 注意:
+#   * mediapipe 鎖 <0.11 → 因為 0.10.18 之後 PyPI 不再出 aarch64 wheel
+#   * opencv-python 在這個檔案 *不* 列出 → install_jetson.sh 會視 --pip-cv 旗標決定:
+#       - 預設 (推薦): 借用系統的 python3-opencv (含 GStreamer, CSI 相機才能用)
+#       - --pip-cv:    pip 裝 opencv-python (只 USB, 版本較新)
+#
+mediapipe>=0.10.9,<0.11
+numpy<2
+Pillow>=10.0.0

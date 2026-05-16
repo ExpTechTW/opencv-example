@@ -1,0 +1,6 @@
+# macOS / x86 Linux / Windows 用
+# Jetson 請用 install_jetson.sh + requirements-jetson.txt
+opencv-python>=4.8.0
+mediapipe>=0.10.9
+numpy>=1.24.0,<2
+Pillow>=10.0.0
